@@ -1,0 +1,132 @@
+#wrapper{
+  width: 1366px;
+  height: 660px;
+}
+
+.disable{
+  display: none;
+}
+
+.enable{
+  display: block;
+  z-index: 999999;
+}
+
+.title{
+
+}
+
+.btn--site{
+  .btn-s{
+    cursor: pointer;
+  }
+  .btn-s--primary{
+
+  }
+}
+
+.letsplay{
+  .logo{
+
+  }
+  .title{
+    margin: 0;
+    padding-top: 100px;
+  }
+  .btn--site{
+    margin-top: 50px;
+  }
+}
+// let's play
+
+.playing{
+  &--top{
+    .img-figure{
+      width: 10%;
+      height: 50px; 
+    }
+    .title--small{
+      width: 70%;
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 50px;
+    }
+    .logo{
+      width: 20%;
+    }
+  }
+  // playing top
+
+  &--question{
+    .img-question{
+      height: 150px;
+      width: 300px;
+      background: greenyellow;
+    }
+    .conversation{
+      &--site{
+        margin-top: 50px;
+      }
+      &__content{
+        width: 50%;
+        margin: 0px auto;
+      }
+      &__img{
+        width: 20%;
+        height: 50px;
+        background: red;
+      }
+      &__text{
+        text-align: left;
+        width: 78%;
+        margin-left: 2%;
+        p{
+          color: blue;
+          margin-top: 0;
+          margin-bottom: 10px;
+          span{
+            input{
+              border: none;
+              border-bottom: 1px solid #ccc;
+            }
+          }
+        }
+      }
+    }
+  }
+  // playing question
+
+  &--answer{
+    .ansewer__item{
+      input, span{
+        vertical-align: middle;
+      }
+    }
+  }
+  // playing answer
+
+  .btn--site{
+    margin-top: 50px;
+    .btn-s--submit{
+      background: greenyellow;
+      padding: 5px 20px;
+    }
+  }
+}
+// playing
+
+.conversation--site{
+  @include e("item"){
+    @include m("black"){
+      background: black;
+    }
+    @include m("white"){
+      background: white;
+    }
+  }
+  @include e('content'){
+    margin-top: 50px;
+    padding: 100px;
+  }
+}
+
